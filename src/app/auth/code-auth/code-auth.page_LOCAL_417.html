@@ -1,0 +1,36 @@
+<ion-content class="contenido">
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="dark" shape="round" (click)="goBack()">
+      <ion-icon name="arrow-back" color="light"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <br><br><br><br>
+   <h1>Introduce el <a>codigo</a></h1>
+   <h4>Introduce el codigo que te hemos enviado a <a>
+    moisito_yo@hotmail.com</a></h4>
+  <br><br>
+<br>
+<br>
+<ion-grid>
+  <ion-row justify-content-center align-items-center>
+    <ion-col size="auto">
+      <ion-input type="text" (input)="onInputChange($event)" maxlength="1"></ion-input>
+    </ion-col>
+    <ion-col size="auto">
+      <ion-input type="text" (input)="onInputChange($event)" maxlength="1" ></ion-input>
+    </ion-col>
+    <ion-col size="auto">
+      <ion-input type="text" (input)="onInputChange($event)" maxlength="1"></ion-input>
+    </ion-col>
+    <ion-col size="auto">
+      <ion-input type="text" (input)="onInputChange($event)" maxlength="1"></ion-input>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<br><br><br><br><br>
+<div class="centro">
+  <button class="rectangle2">
+  Enviar
+</button>
+</div>
+</ion-content>

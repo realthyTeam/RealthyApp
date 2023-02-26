@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Página principal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Bienvenido, {{ user?.name }}!</h1>
+  <p>Aquí podrás ver tus datos y realizar otras acciones.</p>
+
+  <ion-button (click)="logout()">Cerrar sesión</ion-button>
+</ion-content>
