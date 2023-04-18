@@ -59,7 +59,11 @@ const routes: Routes = [
     path: 'add-your-location',
     redirectTo: 'add-your-location',
     pathMatch: 'full'
+  },  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+
 
 
 ];
