@@ -1,0 +1,163 @@
+<ion-content>
+  <div class="container-fluid">
+    <div class="row">
+   
+      <!-- // Chat -->
+  
+      <div class="col-md px-0">
+  
+        <!-- <div class="chat-header  bg-light">
+  
+          <div class="chat-text-header">Itelibot</div>
+          <div class="chat-options-header">
+            <button type="button" class="btn btn-light rounded-circle"  data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fas fa-pen-to-square"></i></button>
+          </div>
+        </div> -->
+        <header class="chat-header">
+          <button class="exit-btn"><i class="fas fa-arrow-left"></i></button>
+          <div class="profile-wrapper" style="
+          margin-left: 10px;
+      " >
+            <i class="fa-solid fa-robot profile-pic" style="
+            color: #8bc83f;
+        "></i>
+            
+            <span class="status"></span>
+          </div>
+          <h1 class="username">Nombre de usuario</h1>
+          
+        </header>
+        
+        
+        <div class="px-4  chat-box bg-white"
+          style="height: calc(100vh - 115px);contain: strict;overflow: scroll;overflow-x: hidden;padding-top: 2rem !important;">
+  
+  
+         
+  
+          <ng-container *ngFor="let item of arrayMessages ">
+            <ng-container *ngIf="item.id!=id; else elseTemplate">
+  
+              <div class="b-left-container">
+                <!-- <span style="position: absolute;top: 24px;left: 6px;" style="color: #97c22b;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13" width="8" height="13" class="b-left" ><path opacity=".13" fill="#0000000" d="M1.533 3.568L8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568L8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path></svg></span> -->
+                <!-- <img [src]="item.img" class="rounded-circle b-img-left " width="35" > -->
+                <p style="margin-bottom: 15px;text-align: justify;"><span style="margin-left: 6px;"
+                    attr.data-is="{{item.create * 1000 | date:'h:mm a'}}" attr.data-text="{{item.name}}"
+                    class="b-left-msg" style="background:rgb(169, 169, 169)">{{item.message}}<img style="width: 400px;"[src]="item.img"  *ngIf="false" ></span></p>
+              </div>
+  
+  
+            </ng-container>
+            <ng-template #elseTemplate>
+              <div class="b-right-container">
+                <!-- <span ><svg style="position: relative;top: 35px;left: -6px;float: right;" style="color: #97c22b;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13" width="8" height="13" class="b-right" ><path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path></svg></span> -->
+                <!-- <img [src]="item.img" class="rounded-circle b-right-img" width="35" > -->
+                <p style="margin-bottom: 15px;text-align: right;"><span style="margin-right: 6px;" class="b-right-msg "
+                    attr.data-is="{{item.create * 1000 | date: 'h:mm a'}}" attr.data-text="{{item.name}}"
+                    style="background: linear-gradient(37deg,rgb(207, 138, 0),rgb(255, 157, 0));">{{item.message}}</span>
+                </p>
+              </div>
+            </ng-template>
+          
+          </ng-container>
+          
+        </div>
+  
+    
+        <div class="spinner"  *ngIf="SpinnerMsg==true">
+          <div class="bounce1" style="background-color: #00b4ff;"></div>
+          <div class="bounce2" style="background-color: #00b4ff;"></div>
+          <div class="bounce3" style="background-color: #00b4ff;"></div>
+        </div>
+        <div class="input-wrapper">
+          <button type="button" class="image-button"><i class="fa fa-camera"></i></button>
+          <input type="text" placeholder="Escribe aquí..." [(ngModel)]="message" id="message" name="message" (keydown.enter)="send()">
+          <button type="submit" class="btn" (click)="send()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        
+        
+       
+        <!-- <div class="chat-box-tray">
+           
+          <input *ngIf="!isRecording"  type="text" placeholder="Escribe tu mensaje"  [(ngModel)]="message" id="message" name="message" (keydown.enter)="send()">
+          
+          <div id="bars"*ngIf="isRecording" >
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+             
+        </div>
+        <div *ngIf="isRecording "> {{recordedTime}} </div>
+  
+          <i  class="fa-solid fa-microphone" *ngIf="!isUserSpeaking" (click)="startRecording()" style="margin-left: 20px;caret-color: #ff000000;"id="send"  > </i>
+  
+          <i class="fa-solid fa-microphone-slash" *ngIf="isUserSpeaking" (click)="stopRecording()"  style="margin-left: 20px;caret-color: #ff000000;"id="send"  ></i>
+        
+          <i class="fa-solid fa-paper-plane" (click)="send()" id="send" style="caret-color: #ff000000;"></i>
+          </div> -->
+  
+      </div>
+  
+  
+    </div>
+  
+  </div>
+  
+  
+</ion-content>
