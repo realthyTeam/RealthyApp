@@ -1,0 +1,35 @@
+ion-tab-button {
+  --background: #ffffff;
+  border-color: transparent;
+  --color-selected: #3f51b5;
+  i {
+    font-size: 30px;
+  }
+
+
+}
+ion-tab-button.custom-button {
+  --background: #ffffff;
+  --color-selected: #3f51b5;
+  font-size: 28px;
+
+  i.fa-house {
+    font-size: 28px;
+  }
+}
+ion-tab-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  width: 90%;
+  box-shadow: 0px -2px 10px rgb(137, 137, 137);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0 auto;
+}
+
+
+
+

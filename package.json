@@ -32,6 +32,7 @@
     "ionicons": "^6.0.3",
     "mapbox-gl": "^2.13.0",
     "rxjs": "~7.5.0",
+    "swiper": "^9.2.3",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -46,7 +47,7 @@
     "@angular/compiler-cli": "^15.0.0",
     "@angular/language-service": "^15.0.0",
     "@capacitor/cli": "4.6.3",
-    "@ionic/angular-toolkit": "^6.0.0",
+    "@ionic/angular-toolkit": "^6.1.0",
     "@types/jasmine": "~4.0.0",
     "@types/mapbox-gl": "^2.7.10",
     "@types/node": "^12.11.1",
