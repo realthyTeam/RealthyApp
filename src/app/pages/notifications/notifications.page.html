@@ -1,0 +1,18 @@
+<ion-content>
+  <header class="header">
+    <button class="exit-btn"><i class="fas fa-arrow-left"></i></button>
+  </header>
+  <div class="container">
+    <ion-segment value="notifications"  (ionChange)="segmentListChanged($event)">
+      <ion-segment-button value="notifications">
+        <ion-label>Notificaciones</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="messages">
+        <ion-label>Mensajes</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    
+    <app-notification-list *ngIf="segmentSelected == 'notifications'"></app-notification-list>
+    <app-messages-list *ngIf="segmentSelected == 'messages'"></app-messages-list>
+  </div>
+</ion-content>

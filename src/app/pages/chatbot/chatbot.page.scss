@@ -71,7 +71,9 @@ body {
   .b-left-msg {
   
       padding: 10px 15px;
-  border-radius: 10px;
+      border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   // background: rgb(206, 206, 206);
   display: inline-block;
   max-width: 90%;
@@ -141,7 +143,9 @@ body {
   .b-right-msg {
       position: relative;
       padding: 10px 15px;
-      border-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
       /* background: rgb(164, 74, 255); */
       // background: linear-gradient(37deg, hsl(250, 100%, 65%), hsl(280, 100%, 60%));
       display: inline-block;
@@ -167,7 +171,7 @@ body {
   .b-right-msg:after {
       content: attr(data-is);
       position: absolute;
-      right: -12px;
+      right: 0px;
       bottom: -1.5em;
       display: block;
       font-size: 0.6rem;
