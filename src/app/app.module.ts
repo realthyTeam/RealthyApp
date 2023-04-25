@@ -7,13 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './guards/auth.guard';
+import { TabsComponent } from './pages/tabs/tabs.component';
+
 @NgModule({
-  declarations: [AppComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-    ],
+  declarations: [AppComponent, TabsComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, AuthGuard],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, AuthGuard, TabsComponent],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

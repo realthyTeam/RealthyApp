@@ -52,5 +52,10 @@ export class ApiService {
 
     return this.http.get(`${this.baseurl}/api/users/show/`+id, { headers });
   }
+  newPassword(email: string): Observable<any>
+    {
+      return this.http.put(
+       `${this.baseurl}/api/updateRandom/${email}`,{});
+    }
 
 }

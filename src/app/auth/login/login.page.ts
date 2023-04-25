@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
         console.log(response);
         localStorage.setItem('access_token',response.token)
         localStorage.setItem('id_user',response.data.id)
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/tabs']);
       },
       async (error) => {
         const alert = await this.alertController.create({
@@ -48,6 +48,10 @@ export class LoginPage implements OnInit {
         await alert.present();
       }
     );
+  }
+  navigatoForgot(){
+    this.router.navigate(['/forgot-password']);
+
   }
   }
 
