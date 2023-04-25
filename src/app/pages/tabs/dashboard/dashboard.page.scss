@@ -1,0 +1,167 @@
+.header-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 60px;
+  padding: 0 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 2px 10px rgb(255, 255, 255);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .div1 { grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+    justify-items: center;
+    margin: 0;
+}
+
+
+  .div5 { grid-area: 1 / 1 / 2 / 2;
+}
+
+
+
+  .button{
+    background-color: #F5F4F8;
+   margin-left: 1vh;
+   font-size: 15px;
+   height: 7vh;
+    color: #234F68;
+border-radius: 30px;
+width: 100%;
+
+  }
+  .button-2{
+    background-color: #234F68;
+   margin-left: 1vh;
+   font-size: 15px;
+
+border-radius: 30px;
+width: 100%;
+
+  }
+
+.left-button {
+  margin-top: 2vh;
+  position: relative;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #234F68;
+  border: 1px solid #000000;
+  margin-right: 10vh;
+}
+h1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  margin-left: 8%;
+  color: #252B5C;
+h4{
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #252B5C;
+}
+h2{
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+  }
+  svg{
+    position: absolute;
+  }
+
+
+
+.right-button {
+  margin-top: 3vh;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  position: relative;
+  background: #FFFFFF;
+  color: #234F68;
+  border: 1px solid #000000;
+}
+
+.right-button ion-icon {
+  font-size: 30px;
+}
+.custom-input {
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid #000000;
+
+  margin: 0 auto;
+}
+
+.custom-input ion-input {
+  border-radius: 20px;
+}
+
+.custom-input ion-input::placeholder {
+  color: #ccc;
+}
+
+.slide{
+width: 270px;
+height: 180px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+text-align: center;
+
+}
+.card{
+position: absolute;
+width: 270px;
+height: 180px;
+border-radius: 30px 30px 30px 0px;
+}
+h3{
+  position: relative;
+
+  color: #FFFFFF;
+}
+
+.parent2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .div3 { grid-area: 1 / 1 / 2 / 2; }
+  .div4 { grid-area: 1 / 2 / 2 / 3; }
+
+  .slides {
+    width: auto; /* Ajusta la altura según lo que necesites */
+    margin: 0;
+  }
+  ion-card{
+    background-color: #F5F4F8;
+    width: 110%;
+    height: 200px;
+  }
