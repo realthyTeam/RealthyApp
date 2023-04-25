@@ -75,6 +75,10 @@ const routes: Routes = [
             path: 'dashboard',
             loadChildren: () => import('./pages/tabs/dashboard/dashboard.module').then((m) => m.DashboardPageModule),
           },
+          {
+            path: 'add-your-location',
+            loadChildren: () => import('./profile/add-your-location/add-your-location.module').then( m => m.AddYourLocationPageModule)
+          },
           // {
           //   path: 'radio',
           //   loadChildren: () => import('./radio/radio-page.module').then((m) => m.RadioPageModule),
