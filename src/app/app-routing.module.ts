@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
+
+import { TabsComponent } from './pages/tabs/tabs.component';
 const routes: Routes = [
   {
     path: 'home',
@@ -60,6 +62,39 @@ const routes: Routes = [
     redirectTo: 'add-your-location',
     pathMatch: 'full'
   },
+  {
+    path: 'tabs',
+        component: TabsComponent,
+        children: [
+          {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'dashboard',
+          },
+          {
+            path: 'dashboard',
+            loadChildren: () => import('./pages/tabs/dashboard/dashboard.module').then((m) => m.DashboardPageModule),
+          },
+          {
+            path: 'add-your-location',
+            loadChildren: () => import('./profile/add-your-location/add-your-location.module').then( m => m.AddYourLocationPageModule)
+          },
+          // {
+          //   path: 'radio',
+          //   loadChildren: () => import('./radio/radio-page.module').then((m) => m.RadioPageModule),
+          // },
+          // {
+          //   path: 'library',
+          //   loadChildren: () => import('./library/library-page.module').then((m) => m.LibraryPageModule),
+          // },
+          // {
+          //   path: 'search',
+          //   loadChildren: () => import('./search/search-page.module').then((m) => m.SearchPageModule),
+          // },
+        ],
+      },
+
+
 
 
 ];
