@@ -60,6 +60,11 @@ const routes: Routes = [
     redirectTo: 'add-your-location',
     pathMatch: 'full'
   },
+  {
+    path: 'profile-estate-agent',
+    loadChildren: () => import('./profile/profile-estate-agent/profile-estate-agent.module').then( m => m.ProfileEstateAgentPageModule)
+  },
+
 
 
 ];
