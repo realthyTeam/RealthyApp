@@ -1,0 +1,145 @@
+.contenedores{
+  box-sizing: border-box;
+  text-align: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  border: 1.5px solid #ECEDF3;
+  border-radius: 18px;
+}
+
+.Specifications{
+  color: rgb(0, 0, 174);
+  font-size: 20px;
+  font-weight: bold
+}
+
+
+
+h4{
+  font-size: medium;
+}
+
+
+
+ion-segment{
+  width: 90vw;
+  margin: auto;
+  border-radius: 30px;
+  height: 7vh;
+  padding: 10px;
+}
+  ion-segment-button {
+     --border-radius:30px;
+    --color-checked: #252B5C;
+    --color:#A1A5C1;
+    --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+}
+.segment{
+  display: grid;
+  place-content: center;
+}
+
+.ordenar-segment{
+  width: 35vw;
+  margin: auto;
+  border-radius: 30px;
+  height: 4vh;
+  padding: 0px;
+}
+.ordenar-segment-button{
+    --border-radius:30px;
+   --color-checked: #252B5C;
+   --color:#A1A5C1;
+   --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  height: 2vh;
+  width: 20vw;
+
+}
+.icon{
+  font-size: medium;
+}
+
+.background-boton{
+  position: absolute;
+  width: 375px;
+  height: 183px;
+  left: 0px;
+  top: 812px;
+
+}
+
+
+.boton {
+  position: fixed;
+  left: 20%;
+  right: 12%;
+  bottom: 20px;
+}
+
+
+
+.startChat {
+  border-radius: 10px;
+  background-color: #8BC83F;
+  font-size: 20px;
+}
+
+.listingsCant{
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+ion-card{
+  padding: 0;
+  border-radius: 30px;
+  width: 90%;
+  display: grid;
+  place-content: center;
+}
+
+.slide{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+
+  }
+
+
+  .card{
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  padding: 0px;
+  }
+  .fav {
+
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 8px;
+    top: 8px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  ion-icon.favorite {
+    color: red;
+  }
+  a{
+    color: rgb(0, 0, 174);
+    font-size: 20px;
+    font-weight: bold
+  }
+

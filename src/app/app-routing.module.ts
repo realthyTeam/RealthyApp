@@ -63,6 +63,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+
+    path: 'profile-estate-agent',
+    loadChildren: () => import('./profile/profile-estate-agent/profile-estate-agent.module').then( m => m.ProfileEstateAgentPageModule)
+  },
+
+    {
     path: 'tabs',
         component: TabsComponent,
         children: [
@@ -93,6 +99,7 @@ const routes: Routes = [
           // },
         ],
       },
+
 
 
 
