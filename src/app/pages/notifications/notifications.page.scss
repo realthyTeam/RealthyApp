@@ -1,0 +1,58 @@
+ion-content{
+    --background:rgb(255, 255, 255);
+
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10vh;
+  }
+  
+
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #252B5C;
+  }
+  
+  .exit-btn {
+    background-color: #f5f4f8;
+    border: none;
+    border-radius: 50%;
+    color: #9E9E9E;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .exit-btn:hover {
+    background-color: #c0392b;
+  }
+
+  .container{
+
+  }
+
+  ion-segment{
+    width: 90vw;
+    margin: auto;
+    border-radius: 30px;
+    height: 7vh;
+    padding: 10px;
+    ion-segment-button {
+       --border-radius:30px;
+      --color-checked: #252B5C;
+      --color:#A1A5C1;
+      --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+       
+  }
+  }
+
