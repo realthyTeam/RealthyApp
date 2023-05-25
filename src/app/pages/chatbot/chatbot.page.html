@@ -43,7 +43,7 @@
                 <!-- <img [src]="item.img" class="rounded-circle b-img-left " width="35" > -->
                 <p style="margin-bottom: 15px;text-align: justify;"><span style="margin-left: 6px;"
                     attr.data-is="{{item.create * 1000 | date:'h:mm a'}}" attr.data-text="{{item.name}}"
-                    class="b-left-msg" style="background:rgb(169, 169, 169)">{{item.message}}<img style="width: 400px;"[src]="item.img"  *ngIf="false" ></span></p>
+                    class="b-left-msg" style="background:rgb(169, 169, 169);white-space: pre-line;">{{item.message}}<img style="width: 400px;"[src]="item.img"  *ngIf="false" ></span></p>
               </div>
   
   
@@ -54,7 +54,7 @@
                 <!-- <img [src]="item.img" class="rounded-circle b-right-img" width="35" > -->
                 <p style="margin-bottom: 15px;text-align: right;"><span style="margin-right: 6px;" class="b-right-msg "
                     attr.data-is="{{item.create * 1000 | date: 'h:mm a'}}" attr.data-text="{{item.name}}"
-                    style="background: linear-gradient(37deg,rgb(207, 138, 0),rgb(255, 157, 0));">{{item.message}}</span>
+                    style="background: linear-gradient(37deg,rgb(207, 138, 0),rgb(255, 157, 0));white-space: pre-line;">{{item.message}}</span>
                 </p>
               </div>
             </ng-template>
