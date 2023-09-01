@@ -114,7 +114,11 @@ const routes: Routes = [
           //   loadChildren: () => import('./search/search-page.module').then((m) => m.SearchPageModule),
           // },
         ],
-      },
+      },  {
+    path: 'properties',
+    loadChildren: () => import('./properties/properties.module').then( m => m.PropertiesPageModule)
+  },
+
 
 
 

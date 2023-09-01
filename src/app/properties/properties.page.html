@@ -1,0 +1,63 @@
+<ion-content>
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let image of images">
+      <div class="image-container">
+        <img [src]="image" alt="Imagen de ejemplo" class="rounded-image">
+        <div class="rating">
+          <ion-icon  name="star"> </ion-icon> 4
+
+        </div>
+        <div class="type">
+         Casa
+        </div>
+        <button class="back-button">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+        <button class="share-button">
+          <ion-icon name="share"></ion-icon>
+        </button>
+        <button class="heart-button">
+          <ion-icon name="heart"></ion-icon>
+        </button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+  <h1>Casa Comoda</h1>
+  <h2>Patzcuaro michoacan</h2>
+  <h3>6000/Month</h3>
+
+  <div class="container">
+    <div class="renta">Renta</div>
+    <div class="compra">Compra</div>
+  </div>
+  <hr>
+  <div class="carousel-container">
+    <!-- Botones del carrusel -->
+    <div class="carousel-button">
+      <ion-icon name="bed"></ion-icon>
+      Habitaciones 5
+    </div>
+    <div class="carousel-button">
+      <ion-icon name="bath"></ion-icon>
+      Baños 2
+    </div>
+    <div class="carousel-button">
+      <ion-icon name="bulb"></ion-icon>
+      Luz
+    </div>
+    <div class="carousel-button">
+      <ion-icon name="restaurant"></ion-icon>
+      Comedor
+    </div>
+    <div class="carousel-button">
+      <ion-icon name="wifi"></ion-icon>
+      Internet
+    </div>
+    <div class="carousel-button">
+      <ion-icon name="leaf"></ion-icon>
+      Jardin
+    </div>
+  </div>
+</ion-content>

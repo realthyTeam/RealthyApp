@@ -161,11 +161,250 @@ export class PropiedadesService {
       banos: 3,
       metrosCuadrados: 200
     },
+    {
+      tipo: "casa",
+      direccion: "Calle Reforma #456",
+      ciudad: "Apatzingán",
+      estado: "Michoacán",
+      codigoPostal: "60120",
+      precioVenta: 1800000,
+      precioRenta: 15000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 180
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Morelos #123",
+      ciudad: "Charapan",
+      estado: "Michoacán",
+      codigoPostal: "61330",
+      precioVenta: 1200000,
+      precioRenta: 10000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 100
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Hidalgo #567",
+      ciudad: "La Piedad",
+      estado: "Michoacán",
+      codigoPostal: "59300",
+      precioVenta: 2800000,
+      precioRenta: 20000,
+      habitaciones: 4,
+      banos: 3,
+      metrosCuadrados: 200
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Cuauhtémoc #789",
+      ciudad: "Los Reyes",
+      estado: "Michoacán",
+      codigoPostal: "60350",
+      precioVenta: 1600000,
+      precioRenta: 13000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 110
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle 5 de Mayo #234",
+      ciudad: "Maravatío",
+      estado: "Michoacán",
+      codigoPostal: "61250",
+      precioVenta: 2200000,
+      precioRenta: 17000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 150
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Miguel Hidalgo #678",
+      ciudad: "Morelia",
+      estado: "Michoacán",
+      codigoPostal: "58000",
+      precioVenta: 3200000,
+      precioRenta: 25000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 180
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Juárez #890",
+      ciudad: "Pátzcuaro",
+      estado: "Michoacán",
+      codigoPostal: "61600",
+      precioVenta: 3500000,
+      precioRenta: 28000,
+      habitaciones: 4,
+      banos: 3,
+      metrosCuadrados: 210
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Benito Juárez #123",
+      ciudad: "Tacámbaro",
+      estado: "Michoacán",
+      codigoPostal: "61300",
+      precioVenta: 1800000,
+      precioRenta: 15000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 100
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Allende #456",
+      ciudad: "Uruapan",
+      estado: "Michoacán",
+      codigoPostal: "60080",
+      precioVenta: 2800000,
+      precioRenta: 22000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 180
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Zaragoza #789",
+      ciudad: "Zamora",
+      estado: "Michoacán",
+      codigoPostal: "59600",
+      precioVenta: 2300000,
+      precioRenta: 18000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 120
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Hidalgo #123",
+      ciudad: "Acuitzio",
+      estado: "Michoacán",
+      codigoPostal: "61870",
+      precioVenta: 1800000,
+      precioRenta: 15000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 150
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Morelos #456",
+      ciudad: "Aguililla",
+      estado: "Michoacán",
+      codigoPostal: "61310",
+      precioVenta: 1200000,
+      precioRenta: 10000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 100
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Juárez #789",
+      ciudad: "Angamacutiro",
+      estado: "Michoacán",
+      codigoPostal: "60480",
+      precioVenta: 2500000,
+      precioRenta: 18000,
+      habitaciones: 4,
+      banos: 3,
+      metrosCuadrados: 220
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Cuauhtémoc #123",
+      ciudad: "Apatzingán",
+      estado: "Michoacán",
+      codigoPostal: "60100",
+      precioVenta: 1600000,
+      precioRenta: 13000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 110
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Allende #456",
+      ciudad: "Aporo",
+      estado: "Michoacán",
+      codigoPostal: "61290",
+      precioVenta: 2000000,
+      precioRenta: 16000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 180
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Benito Juárez #789",
+      ciudad: "Aquila",
+      estado: "Michoacán",
+      codigoPostal: "61580",
+      precioVenta: 1400000,
+      precioRenta: 12000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 120
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle Reforma #123",
+      ciudad: "Ario",
+      estado: "Michoacán",
+      codigoPostal: "60950",
+      precioVenta: 2200000,
+      precioRenta: 18000,
+      habitaciones: 4,
+      banos: 3,
+      metrosCuadrados: 200
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Miguel Hidalgo #456",
+      ciudad: "Arteaga",
+      estado: "Michoacán",
+      codigoPostal: "61550",
+      precioVenta: 1300000,
+      precioRenta: 11000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 100
+    },
+    {
+      tipo: "casa",
+      direccion: "Calle 5 de Mayo #789",
+      ciudad: "Briseñas",
+      estado: "Michoacán",
+      codigoPostal: "61640",
+      precioVenta: 1900000,
+      precioRenta: 16000,
+      habitaciones: 3,
+      banos: 2,
+      metrosCuadrados: 150
+    },
+    {
+      tipo: "departamento",
+      direccion: "Av. Cuauhtémoc #123",
+      ciudad: "Buenavista",
+      estado: "Michoacán",
+      codigoPostal: "61430",
+      precioVenta: 1500000,
+      precioRenta: 13000,
+      habitaciones: 2,
+      banos: 1,
+      metrosCuadrados: 110
+    },
   ];
   constructor() { }
 
 
   getPropiedades(){
     return this.propiedades;
-  }
-}
+  }}

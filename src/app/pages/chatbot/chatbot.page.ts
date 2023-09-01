@@ -15,7 +15,7 @@ interface Propiedad {
   styleUrls: ['./chatbot.page.scss'],
 })
 export class ChatbotPage implements OnInit {
-  
+
   arrayMessages:any[]=[];
   message: string="";
   SpinnerMsg:boolean = false;
@@ -55,8 +55,8 @@ export class ChatbotPage implements OnInit {
 
 
   propiedadesArray:any[]=[];
-  constructor(public propApi:PropiedadesService) { 
-    
+  constructor(public propApi:PropiedadesService) {
+
   }
 
   obtenerRecomendaciones() {
@@ -77,15 +77,15 @@ export class ChatbotPage implements OnInit {
 
   async send() {
     const configuration = new Configuration({
-      apiKey: "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"
+      apiKey: "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"
     });
     const openai = new OpenAIApi(configuration);
-    
+
     if (this.message != "") {
       if(this.message.includes('intereses')){
         let msg=this.message;
         this.message="";
-        
+
         this.arrayMessages.push({ message: msg, id: 1, create: new Date() });
         let msgrec = "";
         this.obtenerRecomendaciones();
@@ -104,12 +104,12 @@ export class ChatbotPage implements OnInit {
         this.prompt=`Compórtate como un bot asistente de bienes raices, tu funcion es:
         - Buscar propiedades en venta o renta en una zona especifica, proporcionando informacion sobre el precio, tamaño etc.
         -Respuesta a preguntas frecuentes puedes proporcionar respuestas automaticas a preguntas frecuentes sobre bienes raices, terminos y condiciones de un contrato, requisitos para obtener una hipoteca etc.
-       
+
        El siguiente json es un arreglo de objetos de propiedades que podras recomendar en base a lo que pide el usuario.
        ${JSON.stringify(this.propiedadesArray)}
-       
-       
-       
+
+
+
        Tu: Hola, puedes recomendarme casas en renta en la piedad?
        Bot:Hola! Claro, estaré encantado de ayudarte. Según los datos proporcionados anteriormente, hay una casa en La Piedad que podría interesarte:
 
@@ -129,19 +129,19 @@ export class ChatbotPage implements OnInit {
           top_p:1.0,
           frequency_penalty: 1,
           presence_penalty: 1,
-          
+
         });
         this.prompt+="\nBot: "+completion.data.choices[0].text;
         console.log(completion.data.choices[0].text)
         let bot:string =completion.data.choices[0].text??"";
         bot=bot.split("Bot:")[1];
-       
+
         this.arrayMessages.push({ message: bot, id: 2, create: new Date() });
-      
+
       }
-      
+
     }
-    
+
   }
 
 
