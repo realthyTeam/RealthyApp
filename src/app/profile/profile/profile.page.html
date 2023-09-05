@@ -1,14 +1,196 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Página principal
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <h1>Bienvenido, {{ user?.name }}!</h1>
-  <p>Aquí podrás ver tus datos y realizar otras acciones.</p>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" shape="round" (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
-  <ion-button (click)="logout()">Cerrar sesión</ion-button>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button color="light" shape="round">
+      <ion-icon name="share-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="5">
+
+      </ion-col>
+      <ion-col size="3">
+        <h3 class="Specifications">Profile</h3>
+      </ion-col>
+      <ion-col size="4">
+
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="ion-text-center Specifications">
+
+
+        <img src="../assets/images/Ellipse.png" alt="profile" width="100px" height="100px">
+        <h2>{{nombre}}</h2>
+        <p>{{correo}}</p>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+
+        <div class="contenedores">
+          <p class="Specifications">{{listings}}</p>
+          <h4>Listings</h4>
+        </div>
+
+      </ion-col>
+      <ion-col size="4">
+
+        <div class="contenedores">
+          <p class="Specifications">{{reviews}}</p>
+          <h4>Reviews</h4>
+        </div>
+
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="contenedores">
+          <p class="Specifications">{{sold}}</p>
+          <h4>Sold</h4>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-segment value="default">
+          <ion-segment-button value="default">
+            <ion-label>Listings</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="segment">
+            <ion-label>Sold</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <p class="listingsCant"> <a>{{listingsCant}}</a> listings</p>
+      </ion-col>
+      <ion-col class="segment">
+        <ion-segment class="ordenar-segment" value="default">
+          <ion-segment-button class="ordenar-segment-button" value="default">
+            <ion-icon class="icon" name="grid-outline"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button class="ordenar-segment-button" value="segment">
+            <ion-icon class="icon" name="grid-outline"></ion-icon>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="listings">
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <div class="slide">
+            <img src="https://img.olx.com.br/thumbs256x256/63/633352365378534.jpg" class="card">
+            <button class="fav" (click)="toggleFavorite()">
+              <ion-icon name="heart" [ngClass]="{'favorite': isFavorite}"></ion-icon>
+            </button>
+
+          </div>
+          <ion-card-header>
+
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <div class="slide">
+            <img src="https://img.olx.com.br/thumbs256x256/63/633352365378534.jpg" class="card">
+            <button class="fav" (click)="toggleFavorite()">
+              <ion-icon name="heart" [ngClass]="{'favorite': isFavorite}"></ion-icon>
+            </button>
+          </div>
+          <ion-card-header>
+
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <div class="slide">
+            <img src="https://img.olx.com.br/thumbs256x256/63/633352365378534.jpg" class="card">
+            <button class="fav" (click)="toggleFavorite()">
+              <ion-icon name="heart" [ngClass]="{'favorite': isFavorite}"></ion-icon>
+            </button>
+          </div>
+          <ion-card-header>
+
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <div class="slide">
+            <img src="https://img.olx.com.br/thumbs256x256/63/633352365378534.jpg" class="card">
+            <button class="fav" (click)="toggleFavorite()">
+              <ion-icon name="heart" [ngClass]="{'favorite': isFavorite}"></ion-icon>
+            </button>
+          </div>
+          <ion-card-header>
+
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Here's a small text description.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </div>
+  <div class="sold">
+
+  </div>
+
+
+  <ion-fab class="boton" vertical="bottom" horizontal="center" slot="fixed">
+    <ion-button class="startChat" color="#8BC83F" expand="block">
+      Start Chat
+    </ion-button>
+  </ion-fab>
+
+
+
+
 </ion-content>

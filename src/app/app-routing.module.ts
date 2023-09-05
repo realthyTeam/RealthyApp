@@ -58,8 +58,7 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./profile/profile/profile.module').then( m => m.ProfilePageModule),
-    canActivate: [AuthGuard]
+    loadChildren: () => import('./profile/profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
     path: 'add-your-location',
@@ -114,7 +113,8 @@ const routes: Routes = [
           //   loadChildren: () => import('./search/search-page.module').then((m) => m.SearchPageModule),
           // },
         ],
-      },  {
+      },
+  {
     path: 'properties',
     loadChildren: () => import('./properties/properties.module').then( m => m.PropertiesPageModule)
   },
