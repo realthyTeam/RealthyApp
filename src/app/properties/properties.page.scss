@@ -1,0 +1,260 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  height: 432px;
+  position: relative;
+}
+
+.rounded-image {
+  border-radius: 50px;
+  width: 376px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 432px;
+
+}
+
+.heart-button{
+  background-color: #8bc83f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+
+}
+ .share-button {
+  background-color: #ffffff;
+  color: #252b5c;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+.back-button {
+  background-color: #ffffff;
+  color: #252b5c;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  margin-top: 10px;
+  font-size: 30px;
+
+}
+.share-button {
+  right: 80px; /* Posición en el lado izquierdo */
+  margin-top: 10px;
+}
+.heart-button {
+  right: 23px; /* Posición en el lado derecho */
+  margin-top: 10px;
+
+}
+.rating {
+  position: absolute;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #25485a; /* Color de fondo */
+  border-radius: 20px;
+  padding: 16px;
+  bottom: 30px; /* Colocar en la parte inferior */
+  color: #ffffff; /* Color de las estrellas */
+  font-size: 15px;
+}
+.rating ion-icon {
+color: #ffd700;
+font-size: 15px;
+padding-right: 9px;
+}
+.type {
+  position: absolute;
+  left: 120px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #25485a; /* Color de fondo */
+  border-radius: 20px;
+  padding: 16px;
+  bottom: 30px; /* Colocar en la parte inferior */
+  color: #ffffff; /* Color de las estrellas */
+  font-size: 15px;
+}
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #252B5C;
+
+margin-left: 8%;
+}
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #141832;
+  margin-top: -20px;
+margin-left: 70%;
+position: relative ;
+
+}
+  h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    margin-left: 8%;
+    color: #252B5C;
+    margin-top: -15px;
+    position: absolute;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .renta {
+    /* Estilos específicos de .renta */
+    background-color: #8bc83f;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+
+    margin-left: 8%;
+  }
+
+  .compra {
+    /* Estilos específicos de .compra */
+    background-color: #8bc83f;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    width: 80px;
+
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  hr{
+    width: 90%;
+    background-color: #414244; /* Color de la línea */
+    text-align: center;
+    margin-top: 10px
+  }
+  .carousel-container {
+    display: flex;
+    overflow-x: auto; /* Permite desplazarse horizontalmente */
+    scroll-snap-type: x proximity; /* Configuración de desplazamiento */
+    gap: 10px; /* Espacio entre los botones */
+    padding: 10px; /* Espaciado interior */
+  }
+
+  .carousel-button {
+    flex: 0 0 auto; /* No permitir que los botones crezcan */
+    min-width: 100px; /* Ancho mínimo de cada botón */
+    text-align: center; /* Centrar el contenido del botón */
+    background-color: #f5f4f8; /* Color de fondo */
+    border-radius: 35px; /* Bordes redondos */
+    padding: 30px; /* Espaciado interior del botón */
+    scroll-snap-align: start; /* Alineación de desplazamiento */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    white-space: nowrap; /* Evitar el salto de línea en el texto largo */
+    color: #252B5C;
+    font-size: 20px;
+  }
+  .carousel-button {
+    /* ... Estilos anteriores ... */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+  }
+
+  .carousel-button ion-icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    color: #8bc83f;
+  }
+
+  ion-item {
+    --background: #f5f4f8;
+    --border-radius: 30px;
+    --min-height: 100px;
+    width: 90vw;
+    margin: auto;
+
+    ion-avatar {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+
+    ion-label {
+        h1 {
+            color: #252B5C;
+        }
+
+        p {
+            color: #53587A;
+        }
+
+        span {
+            font-size: x-small;
+            color: #A1A5C1;
+        }
+    }
+
+
+}
+
+ion-item-sliding{
+    margin-bottom: 10px;
+    .item-sliding-active-slide .item{
+        margin-right: 0px;
+        transform: translate3d(-111px, 0px, 0px)!important;
+    }
+}
+
+ion-item-options{
+    ion-item-option{
+        --background: #234F68;
+        --color: white;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 36vw;
+        transform: translate3d(-21px, 0px, 0px);
+    }
+}
+

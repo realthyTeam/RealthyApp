@@ -93,6 +93,14 @@ const routes: Routes = [
             path: 'add-your-location',
             loadChildren: () => import('./profile/add-your-location/add-your-location.module').then( m => m.AddYourLocationPageModule)
           },
+          {
+            path: 'chatbot',
+            loadChildren: () => import('./pages/chatbot/chatbot.module').then( m => m.ChatbotPageModule)
+          },
+          {
+            path: 'notifications',
+            loadChildren: () => import('./pages/notifications/notifications.module').then( m => m.NotificationsPageModule)
+          },
           // {
           //   path: 'radio',
           //   loadChildren: () => import('./radio/radio-page.module').then((m) => m.RadioPageModule),
@@ -106,7 +114,11 @@ const routes: Routes = [
           //   loadChildren: () => import('./search/search-page.module').then((m) => m.SearchPageModule),
           // },
         ],
-      },
+      },  {
+    path: 'properties',
+    loadChildren: () => import('./properties/properties.module').then( m => m.PropertiesPageModule)
+  },
+
 
 
 

@@ -35,6 +35,9 @@ export class DashboardPage implements OnInit {
       this.router.navigate(['/login']);
     }
   }
+  goToNotifications() {
+    this.router.navigateByUrl('/tabs/notifications');
+  }
   logout() {
     this.apiService.logout().subscribe(
       (response) => {
