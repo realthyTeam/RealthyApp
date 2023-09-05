@@ -135,6 +135,15 @@ position: relative ;
     margin-top: -15px;
     position: absolute;
   }
+  h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #252B5C;
+
+  margin-left: 8%;
+  }
   .container {
     display: flex;
     align-items: center;
@@ -146,28 +155,28 @@ position: relative ;
     color: white;
     border: none;
     border-radius: 18px;
-    width: 80px;
+    width: 90px;
     height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 
     margin-left: 8%;
   }
 
   .compra {
     /* Estilos específicos de .compra */
-    background-color: #8bc83f;
-    color: white;
+    background-color: #f5f4f8;
+    color: #252b5c;
     border: none;
     border-radius: 18px;
-    width: 80px;
+    width: 90px;
 
     height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-left: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   hr{
     width: 90%;
@@ -189,12 +198,12 @@ position: relative ;
     text-align: center; /* Centrar el contenido del botón */
     background-color: #f5f4f8; /* Color de fondo */
     border-radius: 35px; /* Bordes redondos */
-    padding: 30px; /* Espaciado interior del botón */
+    padding: 20px; /* Espaciado interior del botón */
     scroll-snap-align: start; /* Alineación de desplazamiento */
     cursor: pointer; /* Cambiar el cursor al pasar el ratón */
     white-space: nowrap; /* Evitar el salto de línea en el texto largo */
     color: #252B5C;
-    font-size: 20px;
+    font-size: 15px;
   }
   .carousel-button {
     /* ... Estilos anteriores ... */
